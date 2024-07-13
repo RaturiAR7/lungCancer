@@ -6,7 +6,7 @@ import {
 import { useState } from "react";
 
 const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY = "AIzaSyAIgGh9IIpk9h4EEzTEVGV0gc-Y_u_5gYQ";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 export default function Gemini() {
   const [data, setData] = useState("");
@@ -63,6 +63,7 @@ export default function Gemini() {
     console.log(reply.response.text());
     if (reply.response.text() === "0") {
       setData("Please ask questions related to health");
+      setLoading(false);
       return;
     }
 

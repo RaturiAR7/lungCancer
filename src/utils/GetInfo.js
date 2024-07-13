@@ -5,8 +5,8 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY = "AIzaSyAIgGh9IIpk9h4EEzTEVGV0gc-Y_u_5gYQ";
-
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+console.log("Hello ji", API_KEY);
 export async function GetInfo(message) {
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: MODEL_NAME });

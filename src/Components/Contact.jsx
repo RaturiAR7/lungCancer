@@ -19,21 +19,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    ///template_yrlss19
-    // service_7csj1em
-    ///1TVurSpp00nkAoHhR
     emailjs
       .send(
-        "service_guu9ib5",
-        "template_zfop21k",
+        // "service_guu9ib5",
+        // "template_zfop21k",
+        "service_7csj1em",
+        "template_yrlss19",
         {
           from_name: form.name,
-          to_name: "Maahi",
+          to_name: "Anshul",
           from_email: form.email,
-          to_email: "palmaahi27@gmail.com",
+          to_email: "anshulraturi007@gmail.com",
           message: form.message,
         },
-        "5BpJcb_erFST9t_56"
+        "1TVurSpp00nkAoHhR"
+        // "5BpJcb_erFST9t_56"
       )
       .then(
         () => {
@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='bg-gray-950 h-screen w-full flex flex-col'>
+    <div className='bg-gray-950 md:h-screen h-full w-full flex flex-col'>
       <h1 className='text-white text-center text-5xl font-extrabold'>
         Consult Our Doctors
       </h1>

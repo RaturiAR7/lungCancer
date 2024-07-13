@@ -15,7 +15,7 @@ const LungCancer = () => {
       try {
         console.log("Loading model...");
         const loadedModel = await tf.loadLayersModel(
-          "./LungCancerModel/model.json"
+          "/LungCancerModel/model.json"
         );
         console.log("Model loaded successfully:", loadedModel);
         loadedModel.summary(); // Log model summary

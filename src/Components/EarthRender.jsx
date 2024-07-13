@@ -8,7 +8,7 @@ const EarthRender = () => {
       gl={{ preserveDrawingBuffer: false }}
       frameloop='demand'
       camera={{
-        fov: window.innerWidth >= 1000 ? 17 : 25,
+        fov: window.innerWidth >= 1000 ? 17 : 17,
         position: [0, 15, 25],
       }}
     >
